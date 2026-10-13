@@ -1,0 +1,6 @@
+{
+  "name": "SÈVE & SOIE | Silk Botanical Atelier",
+  "description": "Bespoke everlasting silk floral arrangements, custom bridal bouquet atelier, wedding styling consultations, real-time shipment tracking, and secure checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
