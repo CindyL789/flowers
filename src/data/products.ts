@@ -1,4 +1,11 @@
 import { Product, FreshRefillBundle } from '../types';
+import bridalImg from '../assets/images/collection_bridal_white_rose_1791912868160.jpg';
+import terracottaImg from '../assets/images/collection_terracotta_autumn_1791912869267.jpg';
+import ikebanaImg from '../assets/images/collection_ikebana_sculptural_1791912869238.jpg';
+import posyImg from '../assets/images/collection_petite_posy_1791923475616.jpg';
+import mantelImg from '../assets/images/collection_mantel_runner_1791923475591.jpg';
+import salonImg from '../assets/images/collection_salon_centerpiece_1791923491261.jpg';
+import refillBundleImg from '../assets/images/fresh_refill_bundle_1791923491164.jpg';
 
 export const PRODUCTS: Product[] = [
   {
@@ -8,7 +15,7 @@ export const PRODUCTS: Product[] = [
     price: 340,
     category: 'bridal',
     palette: 'blanc',
-    image: '/src/assets/images/collection_bridal_white_rose_1791912868160.jpg',
+    image: bridalImg,
     description: 'An ethereal composition of real-touch Japanese silk French garden roses, layered heirloom ranunculus, and delicate frosted eucalyptus, finished with raw frayed linen silk ribbon. Optionally mix in living fragrant English garden roses that can be reordered and refreshed on demand.',
     dimensions: '14" W × 18" H',
     stemCount: 28,
@@ -41,7 +48,7 @@ export const PRODUCTS: Product[] = [
     price: 460,
     category: 'centerpiece',
     palette: 'terracotta',
-    image: '/src/assets/images/collection_terracotta_autumn_1791912869267.jpg',
+    image: terracottaImg,
     description: 'A sumptuous, autumnal dining statement featuring velvet terracotta dahlias, antique apricot garden roses, wild blackberry botanical clusters, and weathered Tuscan olive branches nestled in a porous stone ceramic vessel. Available in full archival silk or hybrid living blend.',
     dimensions: '22" W × 20" H',
     stemCount: 36,
@@ -74,7 +81,7 @@ export const PRODUCTS: Product[] = [
     price: 385,
     category: 'ikebana',
     palette: 'monochrome',
-    image: '/src/assets/images/collection_ikebana_sculptural_1791912869238.jpg',
+    image: ikebanaImg,
     description: 'A study in architectural restraint inspired by Japanese Sogetsu floral philosophy. Cascading white real-touch Phalaenopsis orchids counterbalance natural aged drift branches in a matte volcanic stoneware urn.',
     dimensions: '26" W × 24" H',
     stemCount: 16,
@@ -96,7 +103,7 @@ export const PRODUCTS: Product[] = [
     price: 520,
     category: 'centerpiece',
     palette: 'blush',
-    image: '/src/assets/images/hero_silk_floral_atelier_1791912867580.jpg',
+    image: salonImg,
     description: 'Our signature salon statement piece. Soft peach peony blossoms, creamy blush heritage tea roses, and delicate trailing sweet peas hand-composed in an authentic fluted French limestone urn. Can be infused with living fresh garden peonies.',
     dimensions: '24" W × 22" H',
     stemCount: 42,
@@ -129,7 +136,7 @@ export const PRODUCTS: Product[] = [
     price: 195,
     category: 'petite',
     palette: 'blush',
-    image: '/src/assets/images/collection_bridal_white_rose_1791912868160.jpg',
+    image: posyImg,
     description: 'An intimate, tactile bedside or vanity arrangement with miniature silk spray roses, French vanilla ranunculus, and powdery lamb’s ear foliage in a fluted alabaster cup.',
     dimensions: '9" W × 11" H',
     stemCount: 14,
@@ -159,7 +166,7 @@ export const PRODUCTS: Product[] = [
     price: 490,
     category: 'centerpiece',
     palette: 'garden',
-    image: '/src/assets/images/collection_terracotta_autumn_1791912869267.jpg',
+    image: mantelImg,
     description: 'A 4-foot elongated architectural floral runner designed for fireplace mantels, long head tables, or console surfaces. Features wild cream delphinium, butterscotch garden roses, and draped smilax vine.',
     dimensions: '48" L × 14" D × 12" H',
     stemCount: 48,
@@ -192,7 +199,7 @@ export const FRESH_REFILL_BUNDLES: FreshRefillBundle[] = [
     ],
     description: 'Direct replacement bundle for the living stems in your Blanche Royale bouquet. Stems arrive freshly cut, hydrated in silicone water vials, and pre-trimmed to slot seamlessly into your permanent silk base.',
     season: 'Year-Round Signature Harvest',
-    image: '/src/assets/images/collection_bridal_white_rose_1791912868160.jpg',
+    image: refillBundleImg,
     includesVials: true,
     lifespanText: '10–14 days freshness'
   },
@@ -210,7 +217,7 @@ export const FRESH_REFILL_BUNDLES: FreshRefillBundle[] = [
     ],
     description: 'Replace faded living stems in your terracotta urn with fresh, richly fragrant California-grown blooms. Preserves your permanent silk structure while renewing the scent and natural botanical moisture.',
     season: 'Autumn / Warm Harvest Season',
-    image: '/src/assets/images/collection_terracotta_autumn_1791912869267.jpg',
+    image: terracottaImg,
     includesVials: true,
     lifespanText: '9–12 days freshness'
   },
@@ -228,7 +235,7 @@ export const FRESH_REFILL_BUNDLES: FreshRefillBundle[] = [
     ],
     description: 'Transform your existing Paris Atelier centerpiece for the current season by slotting in live blooming peonies and fragrant sweet peas alongside your permanent heirloom silk flowers.',
     season: 'Spring / Summer Flush',
-    image: '/src/assets/images/hero_silk_floral_atelier_1791912867580.jpg',
+    image: salonImg,
     includesVials: true,
     lifespanText: '8–11 days freshness'
   },
@@ -245,7 +252,7 @@ export const FRESH_REFILL_BUNDLES: FreshRefillBundle[] = [
     ],
     description: 'A delicate fresh stem refresh designed for your bedside or vanity vase. Brings fresh garden perfume into your bedroom while retaining your archival silk foundation.',
     season: 'Year-Round Harvest',
-    image: '/src/assets/images/collection_bridal_white_rose_1791912868160.jpg',
+    image: posyImg,
     includesVials: true,
     lifespanText: '12–15 days freshness'
   }

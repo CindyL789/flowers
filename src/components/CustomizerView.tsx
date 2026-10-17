@@ -9,6 +9,7 @@ import {
   FRAGRANCE_MISTS 
 } from '../data/customizerOptions';
 import { CartItem } from '../types';
+import bridalImg from '../assets/images/collection_bridal_white_rose_1791912868160.jpg';
 
 interface CustomizerViewProps {
   onAddCustomToCart: (item: CartItem) => void;
@@ -103,7 +104,7 @@ export const CustomizerView: React.FC<CustomizerViewProps> = ({
       subtitle: `${selectedStyle.name} · ${selectedPalette.name} ${isHybrid ? '(Hybrid Blend)' : '(100% Silk)'}`,
       price: totalPrice,
       quantity: 1,
-      image: '/src/assets/images/collection_bridal_white_rose_1791912868160.jpg',
+      image: bridalImg,
       isCustom: true,
       compositionType: isHybrid ? 'hybrid' : 'pure_silk',
       customDetails: {

@@ -13,6 +13,7 @@ import { CheckoutModal } from './components/CheckoutModal';
 import { EditBusinessNameModal } from './components/EditBusinessNameModal';
 import { Footer } from './components/Footer';
 import { BrandProvider } from './context/BrandContext';
+import bridalImg from './assets/images/collection_bridal_white_rose_1791912868160.jpg';
 
 function AppContent() {
   const [currentTab, setCurrentTab] = useState<AppTab>('collections');
@@ -33,7 +34,7 @@ function AppContent() {
         subtitle: 'Bouquet de Mariée Soie Impériale · Rosa Damascena Mist',
         price: 340,
         quantity: 1,
-        image: '/src/assets/images/collection_bridal_white_rose_1791912868160.jpg',
+        image: bridalImg,
         compositionType: 'pure_silk'
       }
     ];

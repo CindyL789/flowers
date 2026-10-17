@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FreshRefillBundle, CartItem } from '../types';
 import { FRESH_REFILL_BUNDLES, PRODUCTS } from '../data/products';
+import { ImageWithFallback } from './ImageWithFallback';
 
 interface FreshRefillViewProps {
   onAddRefillToBag: (item: CartItem) => void;
@@ -123,11 +124,12 @@ export const FreshRefillView: React.FC<FreshRefillViewProps> = ({
 
             {/* Arrangement Showcase Photo with Dual Callouts */}
             <div className="relative aspect-[4/3] my-4 overflow-hidden bg-[#E2D8CC] border border-[#D5CBC0]">
-              <img
+              <ImageWithFallback
                 src={selectedBundle.image}
                 alt={selectedBundle.targetArrangementName}
+                fallbackTitle={selectedBundle.targetArrangementName}
+                fallbackSubtitle={selectedBundle.season}
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-4 flex flex-col justify-end text-white text-xs">
                 <span className="font-serif text-lg">{selectedBundle.targetArrangementName}</span>

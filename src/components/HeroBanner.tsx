@@ -1,5 +1,7 @@
 import React from 'react';
 import { useBrand } from '../context/BrandContext';
+import { ImageWithFallback } from './ImageWithFallback';
+import heroImg from '../assets/images/hero_silk_floral_atelier_1791912867580.jpg';
 
 interface HeroBannerProps {
   onExploreCollections: () => void;
@@ -68,13 +70,14 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
           {/* Right Column: Hero Imagery Showcase with Resilient Fallback */}
           <div className="lg:col-span-6">
             <div className="relative aspect-[4/3] lg:aspect-[16/11] overflow-hidden bg-[#EAE4DC] border border-[#DDD5C9] shadow-md group">
-              <img
-                src="/src/assets/images/hero_silk_floral_atelier_1791912867580.jpg"
+              <ImageWithFallback
+                src={heroImg}
                 alt="Floral atelier displaying luxury handcrafted silk flower arrangements"
+                fallbackTitle={businessName}
+                fallbackSubtitle="Permanent Silk Collection"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                referrerPolicy="no-referrer"
               />
-              <div className="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/60 via-black/20 to-transparent text-white text-xs flex justify-between items-end">
+              <div className="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/60 via-black/20 to-transparent text-white text-xs flex justify-between items-end pointer-events-none">
                 <div>
                   <span className="font-serif text-base block font-normal tracking-wide">{businessName}</span>
                   <span className="text-[11px] text-white/80 uppercase tracking-widest font-light">Botanical Collection</span>

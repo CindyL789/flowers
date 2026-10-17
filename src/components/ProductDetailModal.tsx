@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Product } from '../types';
 import { FRAGRANCE_MISTS } from '../data/customizerOptions';
+import { ImageWithFallback } from './ImageWithFallback';
 
 interface ProductDetailModalProps {
   product: Product | null;
@@ -49,11 +50,12 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           {/* Left Column: Image & Craft Guarantee */}
           <div className="md:col-span-6 bg-[#F2ECE3] relative p-6 flex flex-col justify-between border-b md:border-b-0 md:border-r border-[#E8E2D9]">
             <div className="aspect-[4/3] md:aspect-square overflow-hidden bg-[#E2D8CC] border border-[#DDD5C9] relative">
-              <img
+              <ImageWithFallback
                 src={product.image}
                 alt={product.name}
+                fallbackTitle={product.name}
+                fallbackSubtitle={product.frenchSubtitle}
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
               {product.isBestseller && (
                 <div className="absolute top-3 left-3 bg-[#1E1B18] text-[#FAF8F5] text-[10px] uppercase tracking-[0.16em] px-2.5 py-1">

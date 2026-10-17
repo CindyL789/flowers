@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Product } from '../types';
 import { PRODUCTS } from '../data/products';
 import { ProductDetailModal } from './ProductDetailModal';
+import { ImageWithFallback } from './ImageWithFallback';
 
 interface CollectionsViewProps {
   onAddToCart: (product: Product, quantity: number, mistId?: string, isHybrid?: boolean) => void;
@@ -201,11 +202,12 @@ export const CollectionsView: React.FC<CollectionsViewProps> = ({
                 className="relative aspect-[4/3] overflow-hidden bg-[#F0EAE1] cursor-pointer"
                 onClick={() => setActiveModalProduct(product)}
               >
-                <img
+                <ImageWithFallback
                   src={product.image}
                   alt={product.name}
+                  fallbackTitle={product.name}
+                  fallbackSubtitle={product.frenchSubtitle}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  referrerPolicy="no-referrer"
                 />
                 
                 {product.isBestseller && (

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CartItem } from '../types';
+import { ImageWithFallback } from './ImageWithFallback';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -81,11 +82,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 <div key={item.id} className="flex gap-4 pb-6 border-b border-[#E8E2D9] text-xs">
                   {/* Thumbnail */}
                   <div className="w-20 h-24 bg-[#EAE4DC] border border-[#D5CBC0] overflow-hidden shrink-0">
-                    <img
+                    <ImageWithFallback
                       src={item.image}
                       alt={item.title}
+                      fallbackTitle={item.title}
                       className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
                     />
                   </div>
 
